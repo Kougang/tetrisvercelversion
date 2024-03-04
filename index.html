@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Tetris</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- demmarage du jeu -->
+    <p id="startnowText">compte a rebour</p>
+
+    <div id="blockCanvas">
+      <canvas id="idcanvas"> </canvas>
+      <div class="tetris">
+        <!-- <span class="tetris_name">TETRIS</span> -->
+        <img src="./images/logo.jpg" alt="TETRIS" id="logo" />
+        <canvas id="idcanvas1"> </canvas>
+        <div class="scoreLinesLevel">
+          <p>Score: <span id="score"></span></p>
+          <p>Lines: <span id="lines"></span></p>
+          <p>Level: <span id="level"></span></p>
+        </div>
+        <button class="play" id="play">PLAY/END</button>
+      </div>
+
+      <div id="controlBlock">
+        <span class="text-consol">Controls:</span>
+        <span><img src="./images/haut.png" alt="rotate" />Rotate </span>
+        <span><img src="./images/left.png" alt="left" />Left </span>
+        <span><img src="./images/right.png" alt="rigth" />Right </span>
+        <span><img src="./images/bottom.png" alt="down" />Down </span>
+        <span><img src="./images/entrer.png" alt="pause" />reload </span>
+        <span><img src="./images/space.png" alt="drop" />Drop </span>
+        <span><img src="./images/Esc.png" alt="end" />pause</span>
+      </div>
+    </div>
+    <!-- perdu -->
+    <div id="endMessage" style="display: none">
+      <p id="endMessageText"></p>
+    </div>
+
+    <!-- charger les sons -->
+    <audio id="gameStartAudio">
+      <source id="gameStartAudioSource" type="audio/wav" />
+      Votre navigateur ne supporte pas l'élément audio.
+    </audio>
+
+    <script type="text/javascript" src="musique.js"></script>
+    <script type="text/javascript" src="./src/GeneralDeclaration.js"></script>
+    <script type="text/javascript" src="./src/collision.js"></script>
+    <script type="text/javascript" src="./src/countOperation.js"></script>
+    <script type="text/javascript" src="./src/App.js"></script>
+    <script type="text/javascript" src="./src/sendData2html.js"></script>
+    <script type="text/javascript" src="./src/controllerEven.js"></script>
+  </body>
+</html>
