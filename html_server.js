@@ -43,11 +43,10 @@ function start_html_server() {
     })
     .listen(port, hostname, () => {
       console.log("Server running at localhost:8080");
-      console.log("or  http://web-r4ae1ecd4-18dd.docode.fi.qwasar.io:8080");
-      console.log("or https://kougang.github.io/tetris-game/ ");
-      /* console.log("Replace XXXXXXXXX by your current workspace ID"); */
-      /* console.log("(look at the URL of this page and XXXXXXXXX.docode.YYYY.qwasar.io, XXXXXXXXX is your workspace ID and YYYY is your zone)"); */
-    }); //https://r4ae1ecd4-18dd.docode.fi.qwasar.io/#/home/docode/project
+      console.log(
+        "external host server https://tetrisvercelversion.vercel.app/"
+      );
+    });
 }
 
 start_html_server();
